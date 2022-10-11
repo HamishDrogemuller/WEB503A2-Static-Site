@@ -25,3 +25,22 @@ about, contact, work, intro {
     background-color: transparent;
 }
 
+#Contact #contact .container .icons {
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    border: 3px solid black;
+    width: min(100% - 1rem);
+    gap: 1em;
+    padding: 10px;
+
+    
+}
+
+#Contact #contact .fields {
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: row;
+    
+}
+
