@@ -1,0 +1,66 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: fill;
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+header,body, nav {
+    padding: 20px;
+    text-align: center;
+    font-family: "Goudy Old Style";
+    vertical-align: baseline;
+    transform: scale(1.125);
+}
+
+header {
+    background-color: transparent;
+}
+
+header.nav {
+    background-color: transparent;
+}
+
+about, contact, work, intro {
+    background-color: transparent;
+}
+
+#page-container {
+    position: relative;
+    margin-top: 10px;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+.nav #list {
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    width: min(100% - 5rem);
+    justify-content: center;
+    gap: 0.5em;
+    padding: 10px;
+    margin: 5px auto;
+    list-style: none;
+}
+
+.nav #list li {
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px auto;
+    list-style: none;
+    width: 25%;
+}
+
+
+
