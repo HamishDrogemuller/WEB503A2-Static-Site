@@ -96,7 +96,7 @@ header {
     text-decoration: underline;
 }
 
-@media (max-width: 450px){
+@media (max-width: 650px){
     .nav #list {
         grid-auto-flow: row;
         text-align: center;
