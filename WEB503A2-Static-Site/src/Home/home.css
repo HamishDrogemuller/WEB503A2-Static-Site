@@ -1,14 +1,18 @@
+@import url("fontawesome-all.min.css");
+
 body {
     background-image: url("../images/bg.jpg");
     background-size: fill;
     background-position: fixed;
     background-repeat: no-repeat;
+    color: ivory;
+    min-height: 100vh;
 }
 
 header,body, nav {
     padding: 20px;
     text-align: center;
-    font-family: "Goudy Old Style";
+    font-family: "Times New Roman", Times, serif;
     vertical-align: baseline;
     transform: scale(1.125);
 }
@@ -17,13 +21,81 @@ header {
     background-color: transparent;
 }
 
-header.nav {
-    background-color: transparent;
+
+#page-container {
+    position: relative;
+    margin-top: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+    flex-grow: 1;
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
+.content h1 {
+    font-size: 4.5em;
+    font-weight: bold;
+    text-align: center;
 }
 
-about, contact, work, intro {
-    background-color: transparent;
+.content p {
+    font-size: 1.5em;
+    text-align: center;
 }
+
+.nav #list {
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    width: min(100% - 5rem);
+    justify-content: center;
+    gap: 0.5em;
+    padding: 10px;
+    margin: 5px auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav #list li {
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px auto;
+    list-style: none;
+    width: 25%;
+    font-size: 2em;
+    
+}
+.nav #list li a:visited {
+    color: ivory;
+    text-decoration: none;
+}
+
+.nav #list li a:hover {
+    color: ivory;
+    text-decoration: none;
+}
+
+@media (max-width: 450px){
+    .nav #list {
+        grid-auto-flow: row;
+        text-align: center;
+    }
+
+}
+
+
 
 
 
