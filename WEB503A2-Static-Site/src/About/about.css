@@ -3,6 +3,7 @@ body {
     background-size: fill;
     background-position: center, center;
     background-repeat: no-repeat;
+    color: ivory;
 }
 
 header,body, nav {
@@ -17,70 +18,94 @@ header {
     background-color: transparent;
 }
 
-header.nav {
-    background-color: transparent;
-}
-
-about, contact, work, intro {
-    background-color: transparent;
-}
 
 
 .nav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 10px;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;  
-    opacity: 50%;
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    width: min(100% - 5rem);
+    justify-content: center;
+    gap: 0.5em;
+    padding: 10px;
+    margin: 5px auto;
+    list-style: none;
+    text-decoration: none;
 }
 
 .nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
     display: block;
     transition: 0.3s;
- 
+    color: ivory;
+    justify-content: center;
+    
 }
 
 .nav a:hover {
     color: #f1f1f1;
 }
 
-.nav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.navBtn {
-    opacity: 50%;
+.mobileNav {
+    display: none;
+    height: 100%;
+    width: 200px;
+    z-index: 1;
+    left: 0;
     background-color: #111;
-    color: white;
+    overflow-x: hidden;  
+    opacity: 50%;
+    color: ivory;
 }
 
-@media screen and (max-height: 450px) {
-    .nav {padding-top: 15px;}
-    .nav a {font-size: 18px;}
+.mobileNav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    color: ivory;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+    .mobileNav {
+        display: block;
+        width: 100px;
+        position: fixed;
+        top: 75%;
+        left: 0;
+    }
+
+    .mobileNav a {
+        font-size: 15px;
+
+    }
 }
 
 #page-container {
     position: relative;
     margin-top: 10px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2.5%;
+    
   }
   
   #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 2.5rem;   
+    flex-grow: 1;
   }
+
   
   #footer {
     position: absolute;
