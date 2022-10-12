@@ -6,6 +6,9 @@ body {
     background-attachment: fixed;
     color: ivory;
     min-height: 100vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
     padding:0;
     margin:0;
 }
@@ -22,8 +25,9 @@ header {
     background-color: transparent;
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        transform: scale(0.5);
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url("../404Page/goodies/rain.gif");
+        
     }
 }
