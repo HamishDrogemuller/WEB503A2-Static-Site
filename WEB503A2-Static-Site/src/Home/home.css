@@ -44,7 +44,7 @@ header {
   }
 
 .content h1 {
-    font-size: 4.5em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
 }
@@ -102,7 +102,21 @@ header {
         text-align: center;
     }
 
+    .content h1{
+        font-size: 35px;
+    }
+
+    .content p{
+        font-size: 20px;
+    }
+
+    .nav #list li {
+        font-size: 20px;
+    }
+
 }
+
+
 
 
 

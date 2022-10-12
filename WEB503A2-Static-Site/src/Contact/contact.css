@@ -125,20 +125,21 @@ header {
 
 .mobileNav {
     display: none;
-    height: 100%;
+    grid-auto-flow: column;
+    height: 80%;
     width: 200px;
     z-index: 1;
     left: 0;
-    background-color: #111;
     overflow-x: hidden;  
     opacity: 50%;
     color: ivory;
 }
 
 .mobileNav a {
-    padding: 8px;
+    grid-auto-flow: column;
+    padding: 5px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 8px;
     display: block;
     transition: 0.3s;
     color: ivory;
