@@ -8,7 +8,7 @@ body {
 header,body, nav {
     padding: 20px;
     text-align: center;
-    font-family: "Goudy Old Style";
+    font-family: "Times New Roman";
     vertical-align: baseline;
     transform: scale(1.125);
 }
@@ -17,11 +17,108 @@ header {
     background-color: transparent;
 }
 
-header.nav {
+header .nav {
     background-color: transparent;
 }
 
 about, contact, work, intro {
     background-color: transparent;
 }
+
+#Contact #contact .container {
+    background-color: transparent;
+}
+
+#Contact #contact .container .icons {
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 3%;
+    width: min(100% - 5rem);
+    gap: 1em;
+    padding: 10px;
+    list-style: none;   
+}
+
+#Contact #contact .container .icons li {
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px auto;
+    list-style: none;
+    width: 25%;
+}
+
+#Contact #contact .fields {
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+    padding: 10px;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+.nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;  
+    opacity: 50%;
+}
+
+.nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+ 
+}
+
+.nav a:hover {
+    color: #f1f1f1;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navBtn {
+    opacity: 50%;
+    background-color: #111;
+    color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .nav {padding-top: 15px;}
+    .nav a {font-size: 18px;}
+}
+
+#page-container {
+    position: relative;
+    margin-top: 10px;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
 
