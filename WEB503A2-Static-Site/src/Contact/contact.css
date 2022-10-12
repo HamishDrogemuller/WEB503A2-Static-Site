@@ -64,8 +64,21 @@ header {
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
-    justify-content: center;
 }
+
+#Contact #contact .action .actions {
+    background-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    width: min(100% - 5rem);
+    justify-content: center;
+    gap: 0.5em;
+    padding: 10px;
+    margin: 5px auto;
+    list-style: none;
+    text-decoration: none;
+}
+
 
 #Contact #contact .action li {
     list-style: none;
