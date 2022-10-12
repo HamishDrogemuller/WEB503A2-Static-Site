@@ -21,3 +21,9 @@ header,body, nav {
 header {
     background-color: transparent;
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        transform: scale(0.5);
+    }
+}
